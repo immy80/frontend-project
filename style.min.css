@@ -1,0 +1,209 @@
+body {
+  background-color: #000;
+  font-family: Montserrat, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.title {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: gray;
+  padding: 0;
+}
+.title h1 {
+  font-size: 40px;
+}
+.navbar {
+  color: grey;
+}
+.navbar p {
+  font-size: 16px;
+}
+.navbar:hover {
+  color: #fff;
+}
+.links {
+  color: #fff;
+  text-decoration: none !important;
+  font-size: 24px;
+  position: relative;
+}
+.links span {
+  display: none;
+}
+.links:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.links::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: grey;
+  transform: scaleX(0.1);
+  transform-origin: left;
+  transition: transform 350ms ease-in;
+  text-decoration: none;
+}
+.links:hover::after {
+  transform: scaleX(1);
+  background: #fff;
+}
+.contact {
+  color: grey;
+}
+.contact:hover {
+  color: #fff;
+}
+.email {
+  color: grey;
+}
+.email:hover {
+  color: #fff;
+}
+#main-image {
+  width: 60%;
+  transition: all 1s ease-in-out;
+}
+.mobile-app {
+  width: 80%;
+  height: 215px;
+  display: none;
+}
+#mobile-ferris {
+  background-image: url(img/fw-image.jpg);
+  background-size: cover;
+  background-position: 10px 20px;
+}
+.image-container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.show {
+  animation-name: showAnimation;
+  animation-duration: 1s;
+  left: -50px;
+  opacity: 0;
+}
+@keyframes showAnimation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 700px;
+  }
+}
+.hide {
+  animation-name: hideAnimation;
+  animation-duration: 1s;
+  left: 0;
+  opacity: 1;
+}
+@keyframes hideAnimation {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.text {
+  margin-top: 200px;
+  padding-left: 150px;
+}
+.images {
+  margin-top: 150px;
+}
+.footer {
+  display: flex;
+  margin-top: 50px;
+  padding-left: 180px;
+}
+.footer span {
+  font-size: 20;
+}
+.fas {
+  font-size: 5px;
+  color: grey;
+  padding: 7px;
+}
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 28px;
+  }
+  .navbar p {
+    font-size: 13px;
+  }
+  #main-image {
+    width: 50%;
+  }
+  .text {
+    width: 50%;
+    padding: 0;
+  }
+  .images {
+    width: 50%;
+    margin-top: 200px;
+  }
+  .links {
+    font-size: 16px;
+  }
+  .footer {
+    padding: 30px;
+  }
+  .contact,
+  .email,
+  .icon {
+    font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .mobile-app {
+    display: inline-block;
+  }
+  .images {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+  .text {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .links span {
+    display: inline;
+    font-size: 20px;
+    font-weight: 700;
+    color: grey;
+    margin-left: 5px;
+  }
+  .links::after {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer span {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+}
