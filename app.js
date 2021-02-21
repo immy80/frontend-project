@@ -22,10 +22,6 @@ for (let i = 0; i < links.length; i++){
     links[i].addEventListener('mouseout', ()=>{
         document.querySelector('.overlay').classList.remove('show');
         document.querySelector('.overlay').classList.add('hide');
-        // if(links[i].textContent === "Ferris Wheel") {
-        //     document.getElementById('main-image').src = "./img/fw-image.jpg"
-        // }else if(links[i].textContent === "Reflection") {
-        //     document.getElementById('main-image').src = "./img/r-image.jpg"
-        // }
+        
     })
 }

@@ -29,7 +29,7 @@ header {
 }
 .links {
   color: #fff;
-  text-decoration: none !important;
+  text-decoration: none;
   font-size: 24px;
   position: relative;
 }
@@ -74,14 +74,29 @@ header {
   transition: all 1s ease-in-out;
 }
 .mobile-app {
-  width: 80%;
+  width: 90%;
   height: 215px;
   display: none;
 }
 #mobile-ferris {
   background-image: url(img/fw-image.jpg);
   background-size: cover;
-  background-position: 10px 20px;
+  background-position: 0;
+}
+#mobile-revolution {
+  background-image: url(img/r-image.jpg);
+  background-size: cover;
+  background-position: 0;
+}
+#mobile-underground {
+  background-image: url(img/u-image.jpg);
+  background-size: cover;
+  background-position: 0;
+}
+#mobile-working {
+  background-image: url(img/w-image.jpg);
+  background-size: cover;
+  background-position: 0;
 }
 .image-container {
   position: relative;
@@ -123,11 +138,11 @@ header {
   }
 }
 .text {
-  margin-top: 200px;
+  margin-top: 170px;
   padding-left: 150px;
 }
 .images {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .footer {
   display: flex;
@@ -154,17 +169,17 @@ header {
   }
   .text {
     width: 50%;
-    padding: 0;
+    padding-left: 40px;
   }
   .images {
     width: 50%;
-    margin-top: 200px;
+    margin-top: 140px;
   }
   .links {
     font-size: 16px;
   }
   .footer {
-    padding: 30px;
+    padding-left: 80px;
   }
   .contact,
   .email,
@@ -185,6 +200,7 @@ header {
   .text {
     width: 100%;
     margin-top: 20px;
+    padding-left: 0;
   }
   .links span {
     display: inline;
@@ -199,9 +215,7 @@ header {
   .footer {
     display: flex;
     flex-direction: column;
-  }
-  .footer span {
-    display: none;
+    padding-left: 40px;
   }
   .icon {
     display: none;

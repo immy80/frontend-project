@@ -1,7 +1,3 @@
-/* * {
-  font-family: 'Montserrat', sans-serif;
-} */
-
 body {
   background-color: black;
   font-family: 'Montserrat', sans-serif;
@@ -37,7 +33,7 @@ header {
 
 .links {
   color: white;
-  text-decoration: none !important;
+  text-decoration: none;
   font-size: 24px;
   position: relative;
 }
@@ -49,10 +45,6 @@ header {
   text-decoration: none;
   color: white;
 }
-
-/* .links:hover {
-    color: white;
-  } */
 
 .links::after {
   content: '';
@@ -90,18 +82,32 @@ header {
 #main-image {
   width: 60%;
   transition: all 1s ease-in-out;
-  /* opacity: 0; */
 }
 
 .mobile-app {
-  width: 80%;
+  width: 90%;
   height: 215px;
   display: none;
 }
 #mobile-ferris {
   background-image: url('./img/fw-image.jpg');
   background-size: cover;
-  background-position: 10px 20px;
+  background-position: 0px;
+}
+#mobile-revolution {
+  background-image: url('./img/r-image.jpg');
+  background-size: cover;
+  background-position: 0px;
+}
+#mobile-underground {
+  background-image: url('./img/u-image.jpg');
+  background-size: cover;
+  background-position: 0px;
+}
+#mobile-working {
+  background-image: url('./img/w-image.jpg');
+  background-size: cover;
+  background-position: 0px;
 }
 
 .image-container {
@@ -119,7 +125,6 @@ header {
 .show {
   animation-name: showAnimation;
   animation-duration: 1s;
-  /* animation-direction: reverse; */
   left: -50px;
   opacity: 0;
 }
@@ -151,12 +156,12 @@ header {
 }
 
 .text {
-  margin-top: 200px;
+  margin-top: 170px;
   padding-left: 150px;
 }
 
 .images {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .footer {
@@ -172,7 +177,6 @@ header {
   font-size: 5px;
   color: grey;
   padding: 7px;
-  /* margin: 3px 5px 0px 5px; */
 }
 
 @media (max-width: 768px) {
@@ -185,24 +189,22 @@ header {
 
   #main-image {
     width: 50%;
-    /* transition: all 1s ease-in-out; */
-    /* opacity: 0; */
   }
 
   .text {
     width: 50%;
-    padding: 0px;
+    padding-left: 40px;
   }
   .images {
     width: 50%;
-    margin-top: 200px;
+    margin-top: 140px;
   }
 
   .links {
     font-size: 16px;
   }
   .footer {
-    padding: 30px;
+    padding-left: 80px;
   }
   .contact,
   .icon,
@@ -225,6 +227,7 @@ header {
   .text {
     width: 100%;
     margin-top: 20px;
+    padding-left: 0px;
   }
 
   .links span {
@@ -242,15 +245,10 @@ header {
   .footer {
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
   }
-  .footer span {
-    display: none;
-  }
+
   .icon {
     display: none;
   }
-
-  /* #main-image {
-      display: none;
-    } */
 }
